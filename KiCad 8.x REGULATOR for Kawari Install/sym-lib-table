@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PaoerSwitch")(type "KiCad")(uri "${KIPRJMOD}/AP2152A/PaoerSwitch.kicad_sym")(options "")(descr ""))
+  (lib (name "LM1117IDTX-5_0_NOPB")(type "KiCad")(uri "${KIPRJMOD}/LM1117/LM1117IDTX-5_0_NOPB.kicad_sym")(options "")(descr ""))
+  (lib (name "AP2152A")(type "KiCad")(uri "${KIPRJMOD}/AP2152A/PaoerSwitch.kicad_sym")(options "")(descr ""))
+)

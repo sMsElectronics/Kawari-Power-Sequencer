@@ -1,0 +1,10 @@
+### Missing 3D models - created on 2025-02-22 05:06
+### Printed by checking_3D_models plugin
+Board file: C:\Users\thex\Dropbox\EVO64\REGULATOR for Kawari Install\switched_reg\switched_reg.kicad_pcb
+3D missing models written to:
+C:\Users\thex\Dropbox\EVO64\REGULATOR for Kawari Install\switched_reg\switched_reg_missing3Dmodels.txt
+-------
+('U2', 'C:\\Program Files\\KiCad\\8.0\\share\\kicad\\3dmodels\\Package_SO.3dshapes\\SOIC-8W_5.3x5.3mm_P1.27mm.wrl')
+-------
+NUM of 3D missing models:1
+checked extensions ['.stp', '.step', '.stpZ']
