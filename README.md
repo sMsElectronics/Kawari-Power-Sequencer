@@ -1,6 +1,7 @@
 
+# PC Boards available here: 
+## [sMs Retro Electronics KoFi Shop](https://ko-fi.com/smsretroelectronics)
 ![](Media/banner.png)
-
 
 The Kawari Power Sequencer, known from here on as the “KPS”, is an electronically switched 5V regulator module that has been designed specifically for the EVO64 motherboard to work along side a Kawari VIC II and MSM. The KPS is a reliable, efficient, low noise, high frequency 5V switching regulator which remains very cool unlike linear regulators IC’s such as the common 7805. 
 
