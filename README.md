@@ -52,3 +52,4 @@ Silkscreen anode indication for D3 is incorrect. If D3 is installed as per the s
 # Change TO:
   ![](media/diode_to.png)
 
+Be sure to check out the full documentation ! PCB's will be available soon on my KoFi shop. 
