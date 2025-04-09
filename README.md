@@ -1,5 +1,5 @@
 
- ![](media/banner.png)
+![](media/banner.png)
 
 
 The Kawari Power Sequencer, known from here on as the “KPS”, is an electronically switched 5V regulator module that has been designed specifically for the EVO64 motherboard to work along side a Kawari VIC II and MSM. The KPS is a reliable, efficient, low noise, high frequency 5V switching regulator which remains very cool unlike linear regulators IC’s such as the common 7805. 
@@ -22,10 +22,10 @@ sMs Retro Electronics A Division of sMs Electronics 2025
 
  # KPS wiring details
 
- ![](media/bigview.png)
+![](media/bigview.png)
 # Detailed Wiring:
 
-  ![](media/connections.png)
+![](media/connections.png)
 
  # KPS Firmware operation
 
@@ -43,7 +43,7 @@ Over current is latching. If an over current condition is detected, the firmware
   
 ![](media/MEASURE_5V.png)
 
- # PCB V1.0 Silkscreen Errata 
+# PCB V1.0 Silkscreen Errata 
 
 Silkscreen anode indication for D3 is incorrect. If D3 is installed as per the silkscreen, the diode will not illuminate. 
 
