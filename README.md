@@ -11,7 +11,7 @@ The KPS allows the user to switch video standards on your EVO64 Commodore 64 bet
 
 The KPS incorporates an over current sensing circuit that will sense when the output current goes above 780 mA and turns the 5V output off. A RED LED will indicate this condition. The KPS will remain latched in over current state until the input voltage is turned off and the over current condition is removed.  
 
-
+sMs Retro Electronics 2025
 # LED Indicators: 
 
 |LED|COLOR|DESCRIPTION
