@@ -23,6 +23,7 @@ The KPS incorporates an over current sensing circuit that will sense when the ou
  # KPS wiring details
 
  ![](media/bigview.png)
+# Detailed Wiring:
 
   ![](media/connections.png)
 
@@ -30,7 +31,24 @@ The KPS incorporates an over current sensing circuit that will sense when the ou
 
 The purpose of the KPS firmware is to allow the Kawari VICII hardware emulator to switch between NTSC and PAL video modes when commanded by an Retrospective EVO64 MSM controller without the need to recycle the computer power. It also provides an OVER CURRENT feature that will switch the power OFF to the Kawari if the current is >= 780 milliamperes. 
 
-The firmware monitors any change from the NTSC (or the PAL) logic output from the MSM and electronically cycles the power OFF then ON to the Kawari Vcc pin. This cycle is as follows: Turn power OFF when a change is detected, keep the power off until the boards RESET is asserted, at this point the power is returned to ON. The NTSC (or the PAL) logic output from the MSM is also routed to the Kawari video select pin header via an open drain MOSFET for 5V to 3.3V translation. 
+The firmware is essentially a state machine that monitors for any change, either a rising or falling edge, from the NTSC (or the PAL) logic output of the MSM and electronically cycles the power OFF then ON to the Kawari Vcc pin. This cycle is as follows: Turn power OFF when a change is detected, keep the power off until the boards RESET is asserted, at this point the power is returned to ON. The NTSC (or the PAL) logic output from the MSM is also routed to the Kawari video select pin header via an open drain MOSFET for 5V to 3.3V translation. 
 
 Over current is latching. If an over current condition is detected, the firmware will turn the power OFF to the Kawari Vcc pin and remain OFF until the next system power cycle. all status is indicated with different color LED's 
+
+ # KPS Build Notes & Cautions 
+
+![](media/BUILD_NOTES.png)
+
+ If you are building your own KPS, make sure you flash U2 MCU with the firmware provided. All the instructions are provided in the "Flashing and HEX File" folder. When building your KPS, *it is recommended that you populate all components except your programmed U2 ATtiny85V-10S MCU and U3 AP2152A electronic power switch.* This is to prevent damage to these chips in cases where the regulator is not working properly due to errors in construction. These errors can lead to over voltage conditions that will easily damage your chips. It is recommended on first power up to check if the BLUE LED is ON and to measure the core regulator output voltage and check if its 5V +/- 5%. If it is not, then investigate why.    
+  
+![](media/MEASURE_5V.png)
+
+ # PCB V1.0 Silkscreen Errata 
+
+Silkscreen anode indication for D3 is incorrect. If D3 is installed as per the silkscreen, the diode will not illuminate. 
+
+# Change FROM:
+  ![](media/diode_from.png)
+# Change TO:
+  ![](media/diode_to.png)
 
